@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html", "./node_modules/flyonui/dist/js/*.js"],
+  content: [
+    "index.html",
+    "./product/index.html",
+    "./node_modules/flyonui/dist/js/*.js",
+  ],
   theme: {
     container: {
       center: true,

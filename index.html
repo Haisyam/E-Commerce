@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="src/output.css" />
     <title>Slicing | E-Coomerce</title>
   </head>
-  <body class="poppins-thin bg-[#ffffff]">
+  <body class="max-w-md md:mx-auto poppins-thin bg-[#ffffff]">
     <nav class="navbar bg-base-100 px-6 mb-2">
       <div class="flex flex-1 items-center">
         <a
@@ -151,16 +151,18 @@
       </div>
     </section>
     <section class="px-5 mb-20">
-      <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+      <div class="grid grid-cols-2 gap-4">
         <!-- AirPods Card -->
         <div class="flex flex-col items-center">
-          <img
-            alt="AirPods in a white charging case"
-            class="w-48 rounded-xl"
-            height="150"
-            src="https://storage.googleapis.com/a1aa/image/SshAE4a1BCLzJ1jeAKm5n6AvD5seje1C9KSfG0wJfTh8jAhfE.jpg"
-            width="150"
-          />
+          <a href="./product/index.html">
+            <img
+              alt="AirPods in a white charging case"
+              class="w-48 rounded-xl"
+              height="150"
+              src="https://storage.googleapis.com/a1aa/image/SshAE4a1BCLzJ1jeAKm5n6AvD5seje1C9KSfG0wJfTh8jAhfE.jpg"
+              width="150"
+            />
+          </a>
           <div class="text-start w-full">
             <div class="flex items-center justify-between mt-2">
               <h2 class="text-md font-semibold text-gray-500">AirPods</h2>
@@ -244,7 +246,7 @@
         </div>
       </div>
     </section>
-    <footer class="mx-auto">
+    <footer class="mx-auto md:max-w-md md:flex md:justify-center">
       <!-- Navbar Bottom -->
       <div
         class="fixed bottom-0 w-full bg-white border-t border-gray-200 flex justify-around"

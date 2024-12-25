@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/output.css" />
+    <title>Slicing | E-Coomerce</title>
+  </head>
+  <body class="max-w-md md:mx-auto poppins-thin bg-[#ffffff]">
+    <header class="relative">
+      <nav
+        class="navbar bg-transparent px-6 mb-2 absolute top-0 left-0 z-50 w-full"
+      >
+        <div class="flex flex-1 items-center">
+          <div
+            class="border rounded-full dropdown relative inline-flex [--auto-close:inside] [--offset:8] [--placement:bottom-end]"
+          >
+            <button
+              onclick="goBack()"
+              id="dropdown-scrollable"
+              type="button"
+              class="dropdown-toggle btn btn-text btn-circle dropdown-open:bg-base-content/10 size-10 bg-[#ffffff] hover:bg-[#ffffff]"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              aria-label="Dropdown"
+            >
+              <div class="indicator">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill="#1c1b1b"
+                    d="M10.843 13.069L6.232 8.384a.546.546 0 0 1 0-.768l4.61-4.685a.55.55 0 0 0 0-.771a.53.53 0 0 0-.759 0l-4.61 4.684a1.65 1.65 0 0 0 0 2.312l4.61 4.684a.53.53 0 0 0 .76 0a.55.55 0 0 0 0-.771"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="navbar-end flex items-center gap-4">
+          <div
+            class="border rounded-full dropdown relative inline-flex [--auto-close:inside] [--offset:8] [--placement:bottom-end]"
+          >
+            <button
+              id="dropdown-scrollable"
+              type="button"
+              class="dropdown-toggle btn btn-text btn-circle dropdown-open:bg-base-content/10 size-10 bg-[#ffffff] hover:bg-[#ffffff]"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              aria-label="Dropdown"
+            >
+              <div class="indicator">
+                <span
+                  class="indicator-item bg-error size-2 rounded-full"
+                ></span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#000"
+                    d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1m-9-1a2 2 0 0 1 4 0v1h-4Zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2Z"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <img
+        src="https://storage.googleapis.com/a1aa/image/SshAE4a1BCLzJ1jeAKm5n6AvD5seje1C9KSfG0wJfTh8jAhfE.jpg"
+        alt=""
+        class="w-full h-auto"
+      />
+    </header>
+    <section class="px-5 mt-3">
+      <div class="bg-white">
+        <div class="flex justify-between items-center mb-4">
+          <h1 class="text-xl font-bold">AirPods</h1>
+          <div
+            class="px-3 py-1.5 bg-red-500 text-white rounded-3xl font-normal"
+          >
+            % On sale
+          </div>
+        </div>
+        <div class="flex items-center mb-4">
+          <div
+            class="flex items-center text-yellow-500 mr-2 px-2 py-1 border border-gray-400 rounded-full font-normal"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#f97316"
+                d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z"
+              />
+            </svg>
+            <span class="ml-1 text-sm text-black">4.8</span>
+          </div>
+          <div
+            class="flex items-center text-green-500 mr-2 px-2 py-1 border border-gray-400 rounded-full font-normal"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 27 24"
+            >
+              <path
+                fill="#48d861"
+                d="M1.547 24a.33.33 0 0 1-.327-.295v-.001L0 11.336l-.001-.031c0-.182.147-.329.329-.329h8.233v13.025zm3.36-3.265v.001a1.301 1.301 0 1 0 1.301-1.301h-.002c-.719 0-1.301.582-1.302 1.301zm.48-8c0 .181.147.328.329.328h.764a.328.328 0 0 0 0-.656h-.77a.33.33 0 0 0-.329.329v.003zm-3.61 0c0 .181.147.328.328.328H4.61a.328.328 0 0 0 0-.656H2.099a.33.33 0 0 0-.328.328v.003zm9.8 9.388a1.9 1.9 0 0 1-.494-.253l.006.004l-.1-.063a21 21 0 0 1-.69-.452l-.101-.071c-.132-.095-.194-.137-.262-.133l-.72.01V12.01l-.013-.77c.451-.287.867-.56.992-.664c.17-.342.338-.628.524-.902l-.017.027q.13-.2.248-.396l1.724-2.894q.122-.204.254-.408c.145-.216.299-.474.44-.74l.024-.049a.9.9 0 0 0 .079-.521l.001.005l-.006-3.12c.063-.454.319-.838.68-1.072l.006-.004a1.97 1.97 0 0 1 1.162-.5h.007l.063-.001c.341 0 .663.081.949.224l-.012-.006c.191.092.354.19.507.3l-.01-.007l.106.07c.241.127.421.341.501.6l.002.007c.187.696.358 1.329.517 1.964l.066.259c.101.34.188.751.244 1.172l.005.042c-.171 1.574-.5 3.01-.976 4.378l.042-.138l7.693-.011h.028a1.643 1.643 0 0 1 1.63 1.848l.001-.008a1.98 1.98 0 0 1-.894 1.781l-.008.005a2.17 2.17 0 0 1 .372 1.4v-.007a1.85 1.85 0 0 1-1.137 1.873l-.012.004a2.4 2.4 0 0 1 .299 1.31v-.006a1.9 1.9 0 0 1-.886 1.733l-.008.005a2.8 2.8 0 0 1 .224 1.459l.001-.013v.188a1.834 1.834 0 0 1-2.007 1.719l.007.001h-4.429l-.015.001l-.016-.001h.001h-5.91c-.051 0-.104 0-.16.008c-.068.004-.14.01-.214.01h-.015a1.1 1.1 0 0 1-.299-.04l.008.002zm-6.015-1.387a.64.64 0 1 1 1.281.001a.64.64 0 0 1-1.281-.001"
+              />
+            </svg>
+            <span class="ml-1 text-sm text-black">94%</span>
+          </div>
+          <span class="text-gray-500 text-sm font-normal">117 reviews</span>
+        </div>
+        <p class="text-gray-700 mb-4 font-normal">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam debitis
+          ipsum molestias magni nesciunt quia aliquam ullam! Alias, obcaecati
+          itaque?
+        </p>
+        <div class="flex space-x-2 mb-4">
+          <button
+            class="bg-[#48d861] text-white font-normal px-3 py-1 rounded-xl"
+          >
+            1 TB
+          </button>
+          <button
+            class="text-black font-normal px-3 py-1 border border-[#2a2a2a] rounded-xl"
+          >
+            825 GB
+          </button>
+          <button
+            class="text-black font-normal px-3 py-1 border border-[#2a2a2a] rounded-xl"
+          >
+            512 GB
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="px-5 mt-3 bottom-0">
+      <div class="flex flex-row gap-4 mb-3">
+        <div class="flex flex-col items-center mb-4">
+          <span class="text-gray-500 line-through mr-2 font-normal"
+            >$650.00</span
+          >
+          <span class="text-2xl font-semibold">$570.00</span>
+        </div>
+        <button
+          class="bg-[#48d861] font-semibold text-white w-full py-2 rounded-2xl"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </section>
+    <script src="../src/index.js"></script>
+  </body>
+</html>
